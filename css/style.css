@@ -137,3 +137,36 @@ footer {
     max-width: 800px;
     margin: 40px auto;
 }
+/* 会社概要テーブルのスタイル */
+.company-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.company-table th, 
+.company-table td {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.company-table th {
+    width: 30%;
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.company-table td {
+    color: #444;
+}
+
+/* 最後の線の処理 */
+.company-table tr:last-child th,
+.company-table tr:last-child td {
+    border-bottom: none;
+}
