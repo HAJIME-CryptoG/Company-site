@@ -135,3 +135,23 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
+/* サービス詳細ページのレイアウト */
+.service-list {
+    padding: 60px 0;
+}
+
+.service-item {
+    display: flex;
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 8px solid #003366;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
