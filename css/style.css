@@ -170,3 +170,37 @@ footer {
 .company-table tr:last-child td {
     border-bottom: none;
 }
+
+/* 会社概要テーブル */
+.company-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.company-table th, .company-table td {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.company-table th {
+    width: 30%;
+    background: #f8f9fa;
+    color: #1a1a1a;
+    text-align: left;
+    font-weight: bold;
+}
+
+.company-table td {
+    color: #444;
+}
+
+.form-wrapper {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
