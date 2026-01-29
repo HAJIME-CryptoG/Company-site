@@ -1,4 +1,33 @@
 /* ==========================================
+   統一ルール：全セクション共通
+   ========================================== */
+
+/* 1. サイト全体の横幅を定義 */
+.container {
+    width: 90%;            /* スマホ時の余白確保 */
+    max-width: 1000px;     /* PC時の最大幅を1000pxに統一 */
+    margin: 0 auto;        /* 中央寄せ */
+}
+
+/* 2. 各セクションの上下の余白を統一 */
+section {
+    padding: 80px 0;       /* 上下にたっぷり余白を持たせる */
+}
+
+/* 3. ヒーロー（背景色あり）セクションの調整 */
+.hero {
+    padding: 100px 0;      /* 目立たせたい部分は少し広めに */
+    text-align: center;
+}
+
+/* 4. 見出しの上下余白も統一 */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ==========================================
    1. 基本設定 (Base)
    ========================================== */
 :root {
@@ -264,4 +293,16 @@ footer {
     .service-image img {
         height: 250px;
     }
+}
+/* サービス詳細ページの横並び調整 */
+.service-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;             /* 画像とテキストの間隔 */
+    margin-bottom: 100px;  /* 各ブロック間の間隔 */
+}
+
+/* 最後のブロックの余白は消す */
+.service-row:last-child {
+    margin-bottom: 0;
 }
